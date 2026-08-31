@@ -28,7 +28,50 @@
             <li>Instagram: @laineora_by_lalaine</li>
         </ul>
 
-        </main>
+        <form>
+            <fieldset>
+                <legend>Contact Form
+
+                <p>
+                    <label> for="name"> Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                </p>  
+
+                <p>
+                    <label for="email"> Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend> Message Details</legend>
+                
+                <p>
+                    <label for="subject"> Subject</label>
+                    <br>
+                    <select id="subject" name="subject" required>
+                        <option value=""> Choose a subject</option>
+                        <option value="product-question">Product Question</option>
+                        <option value="order-status">Order Status</option>
+                        <option value="wholesale-enquiry">Wholesale Enquiry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" required></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+     </main>
+
 
         <footer>
             <p>&copy; 2026 Laineora by Lalaine. All rights reserved.</p>
