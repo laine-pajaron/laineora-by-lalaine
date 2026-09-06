@@ -53,6 +53,55 @@
             </tr>
         </table>
 
+        <h2>Order Enquiry</h2>
+        <p> Interested in these vintage gold hoops? Fill out the form below to send us your order.</p>
+
+        <form>
+            <p>
+                <label for="quantity">Quantity</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="30" required>
+            </p>
+            
+            <p>
+
+            <fieldset>
+                <legend>Delivery Method</legend>
+                <p>
+                    <input type="radio" id="delivery" name="delivery" value="delivery" checked>
+                    <label for="delivery">Delivery</label>
+                </p>
+               
+                <p>
+                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                    <label for="pickup">Store Pick-up</label>
+                </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Optional</legend>
+                <p>
+                    <input type="checkbox" id="gift" name="optional" value="gift" 
+                    <label for="gift">Gift Wrapping</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="express" name="optional" value="express">
+                    <label for="express">Express Handling</label>
+                </p>
+
+                <p>
+                    <label for="phone number">Phone Number</label><br>
+                    <input type="tel" id="phone number" name="phone number" required>
+                </p>
+              
+                <p>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <button type="submit">Send Enquiry</button>
+        </form>
+
     </main>
 
 </body>
