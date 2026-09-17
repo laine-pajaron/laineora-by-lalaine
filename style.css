@@ -228,7 +228,7 @@ legend {
 }
 
 fieldset p {
-    margin-bottom: 16px;
+     margin: 0 0 16px 0;
 }
 
 fieldset label {
