@@ -61,6 +61,13 @@ nav ul {
   padding: 0;
 }
 
+/* ==== Homepage image ==== */
+.hero-image {
+    width: 600px;
+    height: auto;
+    display: block;
+}
+
 nav li {
   display: inline-block;
   margin-right: 18px;
