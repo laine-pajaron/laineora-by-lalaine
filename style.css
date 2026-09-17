@@ -200,8 +200,42 @@ button:hover {
   opacity: 0.9;
 }
 
+/* ===== 6. Product Cards ===== */
 
-/* ===== 6. Utilities ===== */
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  border-left: 4px solid var(--brand);
+  margin-bottom: 16px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: var(--brand);
+}
+/* ===== 7.Contact Form ===== */
+
+fieldset {
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+legend {
+  color: var(--brand);
+  font-weight: bold;
+}
+
+/* ===== 8. Visible Focus State ===== */
+
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* ===== 9. Utilities ===== */
 
 .text-center {
   text-align: center;
