@@ -30,10 +30,11 @@ img {
 }
 
 .hero-image {
-     width: 450px;
-    height: 250px;
+    display: block;
+    width: 500px;
+    height: 350px;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 a {
