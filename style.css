@@ -227,6 +227,21 @@ legend {
   font-weight: bold;
 }
 
+fieldset p {
+    margin-bottom: 16px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+fieldset input,
+fieldset textarea,
+fieldset select {
+    box-sizing: border-box;
+}
+
 /* ===== 8. Visible Focus State ===== */
 
 input:focus,
