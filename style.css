@@ -60,6 +60,16 @@ header p {
   color: var(--paper);
 }
 
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
+}
 
 /* ===== Navigation ===== */
 
@@ -70,7 +80,6 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
   margin-right: 18px;
 }
 
