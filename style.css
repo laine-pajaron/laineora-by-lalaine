@@ -211,12 +211,19 @@ button:hover {
 
 /* ===== 6. Product Cards ===== */
 
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .product-card {
   background: #ffffff;
   border-radius: 10px;
   padding: 16px;
   border-left: 4px solid var(--brand);
   margin-bottom: 16px;
+  flex: 1 1 240px;
 }
 
 .product-card h3 {
