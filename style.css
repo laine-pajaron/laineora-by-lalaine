@@ -274,11 +274,12 @@ textarea:focus {
 
 .page {
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "masthead masthead"
-        "side main"
-        "foot foot";
+        "masthead"
+        "main"
+        "side"
+        "foot";
     gap: 16px;
 }
 
@@ -296,4 +297,14 @@ main {
 
 footer {
     grid-area: foot;
+}
+
+@media (min-width: 700px) {
+    .page {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "masthead masthead"
+            "side main"
+            "foot foot";
+    }
 }
