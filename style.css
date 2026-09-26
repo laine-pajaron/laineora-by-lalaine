@@ -213,7 +213,7 @@ button:hover {
 
 .product-grid {
     display: flex;
-    flex-wrap: column;
+    flex-direction: column;
     gap: 24px;
 }
 
