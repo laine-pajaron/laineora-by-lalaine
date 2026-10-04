@@ -282,6 +282,12 @@ textarea:focus {
         "foot";
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
 header {
     grid-area: masthead;
 }
@@ -305,5 +311,9 @@ footer {
             "masthead masthead"
             "side main"
             "foot foot";
+    }
+
+     .product-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
