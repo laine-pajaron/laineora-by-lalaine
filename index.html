@@ -12,7 +12,7 @@
 <div class="page">
  
       <header class="site-header">
-     <h1>Laineora by Lalaine</h1>
+     <h1 id="shop-name">Laineora by Lalaine</h1>
      <p>Wear Your Era.</p>
 
      <nav>
@@ -47,10 +47,11 @@
      </section> 
     
      <h2> Our Products</h2> 
+     <p id="product-total"></p>
 
      <div class="product-grid">
 
-     <article class="product-card">
+     <article class="product-card" data-price="75">
            <h3> Vintage Gold Hoops</h3>
            <p>₱75</p>
            <p> Gold hoops with a vintage-inspired design, perfect for everday wear.</p>
@@ -59,14 +60,14 @@
            <a href="products/vintage-gold-hoops.html" class="button">View Details</a>
      </article>
 
-    <article class="product-card">
+    <article class="product-card" data-price="100">
           <h3> Celestial Charm Necklace</h3>
           <p> ₱100</p>
           <p> A stunning necklace featuring a celestial charm, perfect for adding a touch of magic to your look.</p>
             <img src= "celestial necklace.jpg" alt="Celestial Charm Necklace">
     </article>
 
-    <article class="product-card">
+    <article class="product-card" data-price="150">
           <h3> Cherry Bakelite Bangle</h3>
           <p>₱150</p>
           <p> A beautiful bangle made from cherry bakelite, perfect for adding a touch of vintage charm to your loo.</p>
@@ -77,8 +78,11 @@
      </main>
 
      <footer>
-        <p>&copy; 2026 Laineora by Lalaine. All rights reserved.</p>
+        <p id="copyright"></p>
       </footer>
 </div>
+
+    <script src="script.js"></script>
+
 </body> 
 </html>
