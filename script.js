@@ -35,3 +35,44 @@ if (copyright) {
 console.log("Shop Name:", shopName);
 console.log("Current Year:", currentYear);
 console.log("Running Total:", runningTotal);
+
+// 6. Stock Status
+const stockCount = 8;
+const stockStatus = document.getElementById("stock-status");
+
+if (stockStatus) {
+    if (stockCount > 10) {
+        stockStatus.textContent = "Stock Status: In stock";
+    } else if (stockCount >= 1 && stockCount <= 10) {
+        stockStatus.textContent = "Stock Status: Only a few left";
+    } else if (stockCount === 0) {
+        stockStatus.textContent = "Stock Status: Sold out";
+    } else {
+        stockStatus.textContent = "Invalid stock count";
+    }
+}
+
+// 7. Free Delivery Check
+const orderTotal = 600;
+const isMember = true;
+const freeDeliveryThreshold = 500;
+
+const deliveryFee = (orderTotal >= freeDeliveryThreshold && isMember === true) ? 0 : 150;
+const finalTotal = orderTotal + deliveryFee;
+
+const deliveryResult = document.getElementById("delivery-result");
+
+if (deliveryResult) {
+    deliveryResult.textContent = `Order Total: ₱${orderTotal} | Delivery Fee: ₱${deliveryFee} | Final Total: ₱${finalTotal}`;
+}
+
+// 8. Shop Open or Closed
+const shopIsOpen = true;
+
+const shopStatus = shopIsOpen ? "Open today" : "Closed today";
+
+const shopStatusElement = document.getElementById("shop-status");
+
+if (shopStatusElement) {
+    shopStatusElement.textContent = `Shop Status: ${shopStatus}`;
+}
