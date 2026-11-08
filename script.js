@@ -37,11 +37,11 @@ console.log("Current Year:", currentYear);
 console.log("Running Total:", runningTotal);
 
 // 6. Stock Status
-const stockCount = 8;
+const stockCount = 15;
 const stockStatus = document.getElementById("stock-status");
 
 if (stockStatus) {
-    if (stockCount > 10) {
+    if (stockCount > 8) {
         stockStatus.textContent = "Stock Status: In stock";
     } else if (stockCount >= 1 && stockCount <= 10) {
         stockStatus.textContent = "Stock Status: Only a few left";
@@ -53,7 +53,7 @@ if (stockStatus) {
 }
 
 // 7. Free Delivery Check
-const orderTotal = 600;
+const orderTotal = 325;
 const isMember = true;
 const freeDeliveryThreshold = 500;
 
